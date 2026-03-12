@@ -1,0 +1,14 @@
+# Imported directly by committed notebooks and helper scripts.
+# Versions are intentionally unpinned until a final validated environment is chosen.
+
+jupyter
+ipython
+matplotlib
+linearmodels
+moderndid
+numpy
+pandas
+scikit-learn
+scipy
+statsmodels
+wildboottest

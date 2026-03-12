@@ -8,3 +8,19 @@
 # Ignore Python cache
 __pycache__/
 
+# Ignore generated LaTeX build artifacts
+output/pdf/*.aux
+output/pdf/*.log
+
+# Ignore rendered scratch images from PDF review
+tmp/pdfs/*.png
+
+# Ignore local build and scratch directories
+output/
+tmp/
+
+# Ignore large local CPS extracts and generated panels
+data/raw/cps_*.csv
+holzer_style_panel.csv
+twfe_panel_county_data.csv
+twfe_panel_data.csv
