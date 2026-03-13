@@ -37,8 +37,6 @@ These findings support the current interpretation that any apparent gains from e
 - `notebooks/`: curated notebook copy plus exported figures.
 - `archive/notebooks/`: exploratory and historical notebook variants retained for provenance, not active analysis.
 - `prepare_panel_for_twfe.py`: county-level panel construction script.
-- `docs/RESEARCH_READINESS.md`: suggested path from current repo state to a submission-ready workflow.
-- `docs/ROBUSTNESS_PLAYBOOK.md`: prioritized robustness agenda aimed at likely reviewer criticism.
 - `scripts/extract_saved_results.py`: extracts saved notebook outputs into a stable Markdown snapshot.
 
 ## Environment Setup
@@ -64,12 +62,10 @@ For research-ready replication, the next cleanup step is to normalize every note
 
 ## Recommended Workflow
 
-1. Review [`docs/RESEARCH_READINESS.md`](docs/RESEARCH_READINESS.md) to see which notebooks are closest to a defensible analysis path.
-2. Review [`docs/ROBUSTNESS_PLAYBOOK.md`](docs/ROBUSTNESS_PLAYBOOK.md) before presenting or writing up results.
-3. Use [`notebooks/SignificanceHolzerStyle.ipynb`](notebooks/SignificanceHolzerStyle.ipynb) as the current best-supported source for the main DDD, placebo, and leave-one-state-out results.
-4. Use [`baseline_model.ipynb`](baseline_model.ipynb) for baseline TWFE context.
-5. Treat notebooks under [`archive/notebooks/README.md`](archive/notebooks/README.md) as exploratory history, not the primary analysis path.
-6. Generate a stable text snapshot of saved notebook outputs:
+1. Use [`notebooks/SignificanceHolzerStyle.ipynb`](notebooks/SignificanceHolzerStyle.ipynb) as the current best-supported source for the main DDD, placebo, and leave-one-state-out results.
+2. Use [`baseline_model.ipynb`](baseline_model.ipynb) for baseline TWFE context.
+3. Treat notebooks under [`archive/notebooks/README.md`](archive/notebooks/README.md) as exploratory history, not the primary analysis path.
+4. Generate a stable text snapshot of saved notebook outputs:
 
 ```bash
 python3 scripts/extract_saved_results.py --output data/outputs/research_snapshot.md

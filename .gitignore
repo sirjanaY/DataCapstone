@@ -24,3 +24,6 @@ data/raw/cps_*.csv
 holzer_style_panel.csv
 twfe_panel_county_data.csv
 twfe_panel_data.csv
+
+# Ignore local-only research notes
+.private/
